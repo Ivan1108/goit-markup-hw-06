@@ -51,7 +51,38 @@
       </section>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button data-modal-close class="close-menu">Закрыть окно</button>
+          <form class="modal-form">
+            <div class="form-block">
+              <h6 class="head-form">
+              Оставьте свои данные, мы вам перезвоним
+              </h6>
+              <label for="name" class="label-form">
+                Имя 
+              </label>
+              <input class="input-form" type="text" id="name" name="name">
+              <label for="tel" class="label-form">
+                Телефон 
+              </label>
+              <input class="input-form" type="tel" id="tel" name="tel">
+              <label for="mail" class="label-form">
+                Почта
+              </label>
+              <input class="input-form" type="email" id="mail" name="mail">
+              <label for="comment" class="label-form">
+                Комментарий
+              </label>
+              <textarea rows="5" ></textarea>
+            </div>
+            <div class="check-block">
+              <input type="checkbox" name="topic" value="agree" id="agree" >
+              <p class="check-block-text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+            </div>
+            <button class="form-button">Отправить</button>
+          </form>
+          <button data-modal-close class="close-menu">
+            <svg class="icon-close-form">
+            </svg>
+          </button>
         </div>
       </div>
       
@@ -357,8 +388,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-div-second">
-
-        
       <div class="footer-left">
       <a href="" class="logo">Web<span class="footer-logo">Studio</span> </a>
       <address class="address">
@@ -422,14 +451,6 @@
           <input type="email" name="Email" placeholder="Email" class="input-email"> 
           <button class="button-sub">Подписаться</button>
         </form>
-          <!-- <ul class="sub-list">
-            <li class="sub-list-elem">
-              <input class="input-email"> 
-            </li>
-            <li class="sub-list-elem">
-              <button class="button-sub">Подписаться</button>
-            </li>
-          </ul> -->
       </div>
     </div>
     </div> 
