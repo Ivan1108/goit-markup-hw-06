@@ -669,6 +669,7 @@ a {
   margin: 0px;
   min-height: 20px;
   min-height: 30px;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: var(--accent-color-text);
@@ -698,7 +699,7 @@ a {
 }
 .label-form{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -709,7 +710,9 @@ a {
   margin-bottom: 4px;
 }
 .input-form{
+
   margin-bottom: 10px;
+  background-image: url(../images/icons.svg#icon-contact);
 }
 .modal-form{
   display: flex;
@@ -755,4 +758,18 @@ a {
   letter-spacing: 0.06em;
   color: #FFFFFF;
   cursor: pointer;
+}
+.icon-close-form{
+  width: 11px;
+  height: 11px;
+}
+.icon-input{
+  position: absolute;
+  top:3px;
+  left: 10px;
+}
+.icon-block{
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
