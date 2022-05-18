@@ -63,7 +63,7 @@
               <input class="input-form" type="text" id="name" name="name" >
                 <span class="icon-input">
                   <svg class="icon-close-form">
-                    <use href="./images/icons.svg#icon-contact " width="11" height="11">
+                    <use href="./images/icons.svg#icon-contact " width="12" height="12">
                     </use>
                   </svg>
                 </span>
@@ -75,7 +75,7 @@
                 <input class="input-form" type="tel" id="tel" name="tel">
                 <span class="icon-input">
                   <svg class="icon-close-form">
-                    <use href="./images/icons.svg#icon-phone " width="11" height="11">
+                    <use href="./images/icons.svg#icon-phone " width="12" height="12">
                     </use>
                   </svg>
                 </span>
@@ -84,10 +84,10 @@
                 Почта
               </label>
                 <div class="icon-block">
-                  <input class="input-form" type="email" id="mail" name="mail">
+                  <input class="input-form"  type="email" id="mail" name="mail">
                   <span class="icon-input">
                     <svg class="icon-close-form">
-                      <use href="./images/icons.svg#icon-mail-form" width="11" height="11">
+                      <use href="./images/icons.svg#icon-mail-form" width="12" height="12">
                       </use>
                     </svg>
                   </span>
@@ -99,9 +99,9 @@
             </div>
             <div class="check-block">
               <input type="checkbox" name="topic" value="agree" id="agree" >
-              <p class="check-block-text">Соглашаюсь с рассылкой и принимаю Условия договора</p>
+              <p class="check-block-text">Соглашаюсь с рассылкой и принимаю <a class="link-form" href="">Условия договора</a></p>
             </div>
-            <button class="form-button">Отправить</button>
+            <button class="form-button" type="submit">Отправить</button>
           </form>
           <button data-modal-close class="close-menu">
             <svg class="icon-close-form">
@@ -475,7 +475,12 @@
         <h5 class="subscribe">Подпишитесь на рассылку</h5>
         <form class="footer-sub-form">
           <input type="email" name="Email" placeholder="Email" class="input-email"> 
-          <button class="button-sub">Подписаться</button>
+          <button class="button-sub">Подписаться
+            <svg class="svg-icon-send">
+              <use href="./images/icons.svg#icon-telegram">
+              </use>
+            </svg>
+          </button>
         </form>
       </div>
     </div>

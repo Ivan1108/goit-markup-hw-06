@@ -133,12 +133,16 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
 }
-.footer-social-icon{
-  background: rgba(255, 255, 255, 0.1);
+.social-item:hover{
+  background-color: var(--accent-color-text);
 }
 .social-item:not(:last-child){
     margin-right: 10px;
+}
+.footer-social-icon{
+  background: rgba(255, 255, 255, 0.1);
 }
 .social-icon{
   width: 20px;
@@ -147,9 +151,6 @@ a {
 }
 .footer-icon{
   fill: #fff;
-}
-.social-item:hover{
-  background-color: var(--accent-color-text);
 }
 .header{
   border-bottom: 1px; 
@@ -290,7 +291,6 @@ a {
   align-items: center;
   justify-content: center;
   transform: translateY(100%);
-  transform: rotateZ(20%);
   transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
   opacity: 0;
 }
@@ -448,6 +448,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
 }
 .client-list-block:hover{
   border-color: var(--accent-color-text);
@@ -652,15 +653,19 @@ a {
   opacity: 0;
   pointer-events: none;
 }
+.backdrop.is-hidden.modal{
+  transform:translate(-50%,-50%);
+}
 .modal{
-  height: 500px;
+  height: 542px;
   width: 600px;
   background-color: #fff;
   position: absolute;
   left: 50%;
   top: 50%;
   transform:translate(-50%,-50%);
-  position: relative;
+  position: absolute;
+  transition: transform 2250ms cubic-bezier(0.4,0,0.2,1);
 
 }
 .close-menu{
@@ -684,6 +689,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 8px;
   margin-right: 8px;
+  cursor: pointer;
 }
 .head-form{
   font-family: 'Roboto';
@@ -708,11 +714,16 @@ a {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
+  border-color: var(--accent-color-text);
 }
 .input-form{
-
   margin-bottom: 10px;
-  background-image: url(../images/icons.svg#icon-contact);
+  padding-left: 42px;
+  height: 40px;
+}
+.input-form:hover,
+.input-form:focus{
+  border-color: var(--accent-color-text);
 }
 .modal-form{
   display: flex;
@@ -763,13 +774,27 @@ a {
   width: 11px;
   height: 11px;
 }
+.icon-close-form:hover,
+.icon-close-form:focus{
+  fill: var(--accent-color-text);
+
+}
 .icon-input{
   position: absolute;
-  top:3px;
+  top:10px;
   left: 10px;
 }
 .icon-block{
   position: relative;
   display: flex;
   flex-direction: column;
+}
+.svg-icon-send{
+  width: 24px;
+  height: 24px;
+  padding-left: 10px;
+}
+.link-form{
+  color: var(--accent-color-text);
+  text-decoration: underline;
 }
