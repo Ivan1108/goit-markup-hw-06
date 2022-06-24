@@ -163,8 +163,8 @@ a {
   fill: #fff;
 }
 .header{
-  border-bottom: 1px; 
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC; 
+
 }
 .header-link {
   color: var(--main-color-text);
@@ -291,6 +291,7 @@ a {
 .portfolio-thumb{
   overflow: hidden;
   position: inherit;
+ 
 }
 .portfolio-thumb::after{
   position: absolute;
@@ -308,18 +309,17 @@ a {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4,0,0.2,1);
+  padding:63px 24px 63px 24px;
 }
 .portfolio-thumb:hover::after{
   opacity: 1;
   transform: translateY(0);
 }
 .portfolio-thumb-one::after{
-  
   content: "Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.";
 }
 .portfolio-thumb-two::after{
@@ -525,7 +525,7 @@ a {
   font-size: 16px;
   letter-spacing: 0.03em;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 .container{
   margin:0 auto;
@@ -614,6 +614,7 @@ a {
   align-items: center;
   margin:auto;
   cursor: pointer;
+  color: #fff;
 }
 .sub-list{
   display: flex;
@@ -665,6 +666,8 @@ a {
   align-items: center;
   /* margin-left: 93px; */
   margin-right: 12px;
+  color: #fff;
+  padding: 15px 16px 15px 16px ;
 }
 .backdrop{
   position: fixed;
@@ -781,9 +784,27 @@ a {
   display: flex;
   align-items: center;
 }
-/* .checkbox{
-  visibility: hidden;
-} */
+.checkbox{
+  -webkit-appearance: none;
+  border-radius: 2px;
+  background: #FFFFFF;
+  position: absolute;
+}
+.check{
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  background-image: url(../images/circle.svg);
+
+  left: -20px;
+  top: 4px;
+}
+.checkbox:checked + .check{
+  background-image: url(../images/check.svg);
+  border-radius: 2px;
+  box-shadow:none;
+  background-size: contain;
+}
 .check-block-text{
   font-family: 'Roboto';
   font-style: normal;
@@ -796,12 +817,16 @@ a {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+  cursor: pointer;
+  position: relative;
 }
 .form-button{
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 30px;
+  width: 200px;
+  height: 50px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -813,7 +838,10 @@ a {
   letter-spacing: 0.06em;
   color: #FFFFFF;
   cursor: pointer;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 .icon-form{
   width: 11px;
@@ -853,6 +881,10 @@ a {
   padding:12px 16px 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-size: inherit;
+  box-sizing: border-box;
+  resize: none;
+
 }
 .textarea::placeholder{
   font-family: 'Roboto';
